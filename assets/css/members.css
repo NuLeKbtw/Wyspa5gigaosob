@@ -23,6 +23,7 @@ li {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
+    
 }
 
 .owner{
@@ -82,4 +83,46 @@ li {
     border-color: lightgreen;
     opacity: 1;
     color: lightgreen;
+}
+@media screen and (max-width: 768px) {
+        .container {
+        overflow: hidden;
+        width: 80%;
+        height: 80%;
+    }
+    .content {
+        font-size: 16px;
+        padding: 50px;
+    }
+    li {
+        margin-right: 30px;
+        align-items: center;
+        justify-self: center;
+    }
+    .button {
+        font-size: 16px;
+        padding: 8px;
+        margin-bottom: 30px;}
+    
+}
+@media (max-width: 375px) {
+    .container {
+        overflow: hidden;
+        width: 80%;
+        height: 80%;
+    }
+    .content {
+        font-size: 16px;
+        padding: 50px;
+    }
+    li {
+        margin-right: 30px;
+        align-items: center;
+        justify-self: center;
+    }
+    .button {
+        font-size: 14px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
 }
