@@ -110,8 +110,43 @@ body {
     }
 }
 
-/* iPhone 14 Pro specific styles */
-@media screen and (width: 393px) and (height: 852px), (width: 430px) and (height: 932px) {
+@media (max-width: 375px) {
+    .container {
+        width: 95%;
+        height: auto;
+        max-height: 95vh;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+    .TitleMain {
+        font-size: 28px;
+        padding: 10px 20px;
+
+        max-width: 90%;
+        text-align: center;
+        white-space: normal;
+        word-wrap: break-word;
+        z-index: 10;
+        margin-bottom: 15px;
+        position: relative;
+        left: auto;
+        transform: none;
+        top: auto;
+    }
+    .TitleMain h1 {
+        font-size: 28px;
+        margin: 0;
+    }
+    .cardweb {
+        gap: 10px;
+    }
+    .cardweb .card {
+        width: 14rem !important;
+        height: auto !important;
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
     .container {
         width: 95%;
         height: auto;
@@ -149,43 +184,6 @@ body {
     }
     .cardweb .card {
         width: 16rem !important;
-        height: auto !important;
-    }
-}
-
-@media (max-width: 375px) {
-    .container {
-        width: 95%;
-        height: auto;
-        max-height: 95vh;
-        padding: 20px;
-        box-sizing: border-box;
-        overflow-y: auto;
-    }
-    .TitleMain {
-        font-size: 28px;
-        padding: 10px 20px;
-
-        max-width: 90%;
-        text-align: center;
-        white-space: normal;
-        word-wrap: break-word;
-        z-index: 10;
-        margin-bottom: 15px;
-        position: relative;
-        left: auto;
-        transform: none;
-        top: auto;
-    }
-    .TitleMain h1 {
-        font-size: 28px;
-        margin: 0;
-    }
-    .cardweb {
-        gap: 10px;
-    }
-    .cardweb .card {
-        width: 14rem !important;
         height: auto !important;
     }
 }

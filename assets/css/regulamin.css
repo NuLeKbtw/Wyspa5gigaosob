@@ -50,7 +50,7 @@
     color: lightgreen;
 }
 /* iPhone 14 Pro specific styles */
-@media screen and (width: 393px) and (height: 852px), (width: 430px) and (height: 932px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
     .container {
         overflow: hidden;
         width: 90%;
